@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alexander/Desktop/GameEngine/object.cpp
+object.hpp
+/home/alexander/Desktop/GameEngine/object.hpp
+cstdio
+-
+string
+-
+vector
+-
+iostream
+-
+fstream
+-
+GL/gl.h
+-
+
+/home/alexander/Desktop/GameEngine/object.hpp
+GL/gl.h
+-
+
