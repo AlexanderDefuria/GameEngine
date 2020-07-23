@@ -6,14 +6,23 @@
 #define GAMEENGINE_OBJECT_HPP
 
 #include <GL/gl.h>
+#include <string>
 
 
 class Object{
 private:
-    float * verts;
+    GLfloat* vertices{};
+    GLfloat* geoVertices{};
+    GLfloat* texVertices{};
+    GLfloat* normVertices{};
 public:
     void LoadObject(const char * object_file_path);
     explicit Object(const char *object_file_path);
+    GLfloat* getGeoVerts();
+
+    static int getGeoVertex(const std::string &faceString);
+    static int getTexVertex(const std::string &faceString);
+    static int getNormVertex(const std::string &faceString);
 };
 
 
